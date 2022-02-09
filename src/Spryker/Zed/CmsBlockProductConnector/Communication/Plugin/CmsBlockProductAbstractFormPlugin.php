@@ -36,7 +36,6 @@ class CmsBlockProductAbstractFormPlugin extends AbstractPlugin implements CmsBlo
         $dataProvider = $this->getFactory()
             ->createCmsBlockProductDataProvider();
 
-        /** @var \Generated\Shared\Transfer\CmsBlockTransfer $cmsBlockTransfer */
         $cmsBlockTransfer = $builder->getData();
         $dataProvider->getData($cmsBlockTransfer);
 
