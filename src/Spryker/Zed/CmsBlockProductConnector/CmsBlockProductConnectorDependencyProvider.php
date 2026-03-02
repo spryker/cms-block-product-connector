@@ -113,11 +113,6 @@ class CmsBlockProductConnectorDependencyProvider extends AbstractBundleDependenc
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addProductFacade(Container $container): Container
     {
         $container->set(static::FACADE_PRODUCT, function (Container $container) {

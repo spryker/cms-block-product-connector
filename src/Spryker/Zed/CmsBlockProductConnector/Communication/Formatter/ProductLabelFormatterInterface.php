@@ -9,11 +9,5 @@ namespace Spryker\Zed\CmsBlockProductConnector\Communication\Formatter;
 
 interface ProductLabelFormatterInterface
 {
-    /**
-     * @param string $productName
-     * @param string $productSku
-     *
-     * @return string
-     */
     public function format(string $productName, string $productSku): string;
 }

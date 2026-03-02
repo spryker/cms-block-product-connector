@@ -12,12 +12,6 @@ use Orm\Zed\Product\Persistence\SpyProductAbstract;
 
 interface CmsBlockProductConnectorMapperInterface
 {
-    /**
-     * @param \Orm\Zed\Product\Persistence\SpyProductAbstract $productAbstractEntity
-     * @param \Generated\Shared\Transfer\ProductAbstractTransfer $productAbstractTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductAbstractTransfer
-     */
     public function mapProductAbstractEntityToProductAbstractTransfer(
         SpyProductAbstract $productAbstractEntity,
         ProductAbstractTransfer $productAbstractTransfer

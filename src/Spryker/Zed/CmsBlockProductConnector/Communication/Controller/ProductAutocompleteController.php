@@ -66,11 +66,6 @@ class ProductAutocompleteController extends AbstractController
      */
     protected const DEFAULT_ITEMS_PER_PAGE = 10;
 
-    /**
-     * @param \Symfony\Component\HttpFoundation\Request $request
-     *
-     * @return \Symfony\Component\HttpFoundation\JsonResponse
-     */
     public function indexAction(Request $request): JsonResponse
     {
         $suggestion = (string)$request->query->get(static::REQUEST_PARAM_SUGGESTION, '');
@@ -91,11 +86,6 @@ class ProductAutocompleteController extends AbstractController
         ]);
     }
 
-    /**
-     * @param int $page
-     *
-     * @return \Generated\Shared\Transfer\PaginationTransfer
-     */
     protected function getPaginationTransfer(int $page): PaginationTransfer
     {
         return (new PaginationTransfer())
@@ -126,11 +116,6 @@ class ProductAutocompleteController extends AbstractController
         return $autocompleteData;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\PaginationTransfer $paginationTransfer
-     *
-     * @return array
-     */
     protected function getPaginationData(PaginationTransfer $paginationTransfer): array
     {
         $hasMoreResults = $paginationTransfer->getLastPage() > 0 &&

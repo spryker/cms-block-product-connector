@@ -43,9 +43,6 @@ class CmsBlockProductConnectorCommunicationFactory extends AbstractCommunication
         );
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockProductConnector\Communication\Formatter\ProductLabelFormatterInterface
-     */
     public function createProductLabelFormatter(): ProductLabelFormatterInterface
     {
         return new ProductLabelFormatter();
@@ -67,9 +64,6 @@ class CmsBlockProductConnectorCommunicationFactory extends AbstractCommunication
         return $this->getProvidedDependency(CmsBlockProductConnectorDependencyProvider::FACADE_LOCALE);
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockProductConnector\Dependency\Facade\CmsBlockProductConnectorToProductFacadeInterface
-     */
     public function getProductFacade(): CmsBlockProductConnectorToProductFacadeInterface
     {
         return $this->getProvidedDependency(CmsBlockProductConnectorDependencyProvider::FACADE_PRODUCT);

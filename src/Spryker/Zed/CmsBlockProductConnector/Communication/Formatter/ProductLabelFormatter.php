@@ -14,12 +14,6 @@ class ProductLabelFormatter implements ProductLabelFormatterInterface
      */
     protected const FORMAT_LABEL = '%s (SKU: %s)';
 
-    /**
-     * @param string $productName
-     * @param string $productSku
-     *
-     * @return string
-     */
     public function format(string $productName, string $productSku): string
     {
         return sprintf(static::FORMAT_LABEL, $productName, $productSku);

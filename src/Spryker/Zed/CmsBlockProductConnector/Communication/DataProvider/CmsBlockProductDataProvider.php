@@ -35,11 +35,6 @@ class CmsBlockProductDataProvider
      */
     protected $productLabelFormatter;
 
-    /**
-     * @param \Spryker\Zed\CmsBlockProductConnector\Dependency\Facade\CmsBlockProductConnectorToLocaleInterface $localeFacade
-     * @param \Spryker\Zed\CmsBlockProductConnector\Persistence\CmsBlockProductConnectorRepositoryInterface $repository
-     * @param \Spryker\Zed\CmsBlockProductConnector\Communication\Formatter\ProductLabelFormatterInterface $productLabelFormatter
-     */
     public function __construct(
         CmsBlockProductConnectorToLocaleInterface $localeFacade,
         CmsBlockProductConnectorRepositoryInterface $repository,

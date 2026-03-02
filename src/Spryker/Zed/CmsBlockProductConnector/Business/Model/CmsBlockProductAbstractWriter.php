@@ -28,10 +28,6 @@ class CmsBlockProductAbstractWriter implements CmsBlockProductAbstractWriterInte
      */
     protected $touchFacade;
 
-    /**
-     * @param \Spryker\Zed\CmsBlockProductConnector\Persistence\CmsBlockProductConnectorQueryContainerInterface $cmsBlockProductConnectorQueryContainer
-     * @param \Spryker\Zed\CmsBlockProductConnector\Dependency\Facade\CmsBlockProductConnectorToTouchInterface $touchFacade
-     */
     public function __construct(
         CmsBlockProductConnectorQueryContainerInterface $cmsBlockProductConnectorQueryContainer,
         CmsBlockProductConnectorToTouchInterface $touchFacade

@@ -17,9 +17,6 @@ class CmsBlockProductAbstractReader implements CmsBlockProductAbstractReaderInte
      */
     protected $queryContainer;
 
-    /**
-     * @param \Spryker\Zed\CmsBlockProductConnector\Persistence\CmsBlockProductConnectorQueryContainerInterface $queryContainer
-     */
     public function __construct(
         CmsBlockProductConnectorQueryContainerInterface $queryContainer
     ) {

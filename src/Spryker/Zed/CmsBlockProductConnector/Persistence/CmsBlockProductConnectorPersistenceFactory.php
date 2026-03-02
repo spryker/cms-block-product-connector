@@ -21,25 +21,16 @@ use Spryker\Zed\Kernel\Persistence\AbstractPersistenceFactory;
  */
 class CmsBlockProductConnectorPersistenceFactory extends AbstractPersistenceFactory
 {
-    /**
-     * @return \Orm\Zed\CmsBlockProductConnector\Persistence\SpyCmsBlockProductConnectorQuery
-     */
     public function createCmsBlockProductConnectorQuery(): SpyCmsBlockProductConnectorQuery
     {
         return SpyCmsBlockProductConnectorQuery::create();
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockProductConnector\Dependency\QueryContainer\CmsBlockProductConnectorToProductAbstractQueryContainerInterface
-     */
     public function getCmsBlockProductConnectorToProductAbstractQueryContainer(): CmsBlockProductConnectorToProductAbstractQueryContainerInterface
     {
         return $this->getProvidedDependency(CmsBlockProductConnectorDependencyProvider::QUERY_CONTAINER_PRODUCT_ABSTRACT);
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockProductConnector\Persistence\Propel\Mapper\CmsBlockProductConnectorMapperInterface
-     */
     public function createCmsBlockProductConnectorMapper(): CmsBlockProductConnectorMapperInterface
     {
         return new CmsBlockProductConnectorMapper();

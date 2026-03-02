@@ -28,9 +28,6 @@ class CmsBlockProductConnectorFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testUpdateCmsBlockProductRelations(): void
     {
         $cmsBlockTransfer = $this->tester->haveCmsBlock();
@@ -49,9 +46,6 @@ class CmsBlockProductConnectorFacadeTest extends Unit
         $this->assertEquals([$productAbstractTransfer->getIdProductAbstract()], $cmsBlockTransfer->getIdProductAbstracts());
     }
 
-    /**
-     * @return void
-     */
     public function testHydrateCmsBlockProductRelations(): void
     {
         $cmsBlockTransfer = $this->tester->haveCmsBlock();
@@ -70,9 +64,6 @@ class CmsBlockProductConnectorFacadeTest extends Unit
         $this->assertEquals([$productAbstractTransfer->getIdProductAbstract()], $cmsBlockTransfer->getIdProductAbstracts());
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockProductConnector\Business\CmsBlockProductConnectorFacadeInterface
-     */
     protected function createCmsBlockProductConnectorFacade(): CmsBlockProductConnectorFacadeInterface
     {
         return $this->tester->getLocator()->cmsBlockProductConnector()->facade();

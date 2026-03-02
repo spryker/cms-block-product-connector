@@ -25,12 +25,6 @@ class CmsBlockProductConnectorToProductFacadeBridge implements CmsBlockProductCo
         $this->productFacade = $productFacade;
     }
 
-    /**
-     * @param string $suggestion
-     * @param \Generated\Shared\Transfer\PaginationTransfer $paginationTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductAbstractSuggestionCollectionTransfer
-     */
     public function getPaginatedProductAbstractSuggestions(
         string $suggestion,
         PaginationTransfer $paginationTransfer

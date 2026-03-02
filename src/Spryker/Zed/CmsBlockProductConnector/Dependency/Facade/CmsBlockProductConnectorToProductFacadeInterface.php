@@ -12,12 +12,6 @@ use Generated\Shared\Transfer\ProductAbstractSuggestionCollectionTransfer;
 
 interface CmsBlockProductConnectorToProductFacadeInterface
 {
-    /**
-     * @param string $suggestion
-     * @param \Generated\Shared\Transfer\PaginationTransfer $paginationTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductAbstractSuggestionCollectionTransfer
-     */
     public function getPaginatedProductAbstractSuggestions(
         string $suggestion,
         PaginationTransfer $paginationTransfer
